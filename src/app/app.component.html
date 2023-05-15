@@ -1,0 +1,49 @@
+<div class="imagenCabecera">
+  <img src="./assets/img/cabecera.jpg" alt="300" width="900">
+</div>
+<div class="imagenPrincipal" style="width: 37%">
+  <img src="./assets/img/imagenPrincipal.png" alt="389" width="500">
+</div>
+<div class="parteDerecha" style="width: 55%">
+
+  <h3>CPU: {{puntosCpu}}</h3>
+  <div class="progressCPU" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-success" [ngStyle]="{'width': barraCpu + '%'}"></div>
+  </div>
+  <button type="button" class="btn btn-warning" class="{{btnCpu[0]}}">Piedra</button>
+  <button type="button" class="btn btn-warning" class="{{btnCpu[1]}}">Papel</button>
+  <button type="button" class="btn btn-warning" class="{{btnCpu[2]}}">Tijera</button>
+  <button type="button" class="btn btn-warning" class="{{btnCpu[3]}}">Lagarto</button>
+  <button type="button" class="btn btn-warning" class="{{btnCpu[4]}}">Spock</button>
+  <h2>{{winround}}</h2>
+  <img src="./assets/img/pressStart.gif" alt="start" style="width: 40%">
+  <img src="" alt="" width="">
+  <img src="" alt="" width="">
+  <img src="" alt="" width="">
+  <img src="" alt="" width="">
+  <H3>JUGADOR:{{puntosJugador}}</H3>
+  <div class="progressJugador" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar bg-success" [ngStyle]="{'width': barraJugador + '%'}"></div>
+  </div>
+
+  <button type="button" class="btn btn-success" class="{{btnJugador[0]}}" (click) = InicioJuego(0)>Piedra</button>
+  <button type="button" class="btn btn-success" class="{{btnJugador[1]}}" (click) = InicioJuego(1) >Papel</button>
+  <button type="button" class="btn btn-success" class="{{btnJugador[2]}}" (click) = InicioJuego(2) >Tijeras</button>
+  <button type="button" class="btn btn-success" class="{{btnJugador[3]}}" (click) = InicioJuego(3) >Lagarto</button>
+  <button type="button" class="btn btn-success" class="{{btnJugador[4]}}" (click) = InicioJuego(4) >Spock</button>
+  <br>
+  <br>
+  <button type="button" class="btn btn-primary" class="{{btnEmpezar}}"(click)="empezar()">Empezar partida</button>
+  <button type="button" class="btn btn-danger" class="{{btnReset}}"(click)="reset()">Resetear partida</button>
+  <div class="card {{cardDisplay}}" style="width: 18rem;">
+    <h3>Cuántas rondas quieres jugar?</h3>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><button type="button" class="btn btn-secondary" (click)="rondas(0)">3 Partidas</button></li>
+      <li class="list-group-item"><button type="button" class="btn btn-secondary" (click)="rondas(1)">5 Partidas</button></li>
+      <li class="list-group-item"><button type="button" class="btn btn-secondary" (click)="rondas(2)">7 Partidas</button></li>
+    </ul>
+  </div>
+
+
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,40 @@
+.imagenCabecera{
+  margin-left: 13%;
+}
+
+.imagenPrincipal{
+  float: left;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+.parteDerecha{
+  float: left;
+  margin-top: 5%;
+
+}
+
+.card{
+  float: right;
+  margin-top: -10%;
+}
+.btn{
+  margin-left: 2%;
+}
+.hidden{
+  display: none;
+}
+.progressCPU{
+  background-color: grey;
+  height: 20px;
+  margin-bottom: 10px;
+  width: 500px;
+}
+.progressJugador{
+  background-color: grey;
+  height: 20px;
+  margin-bottom: 10px;
+  width: 500px;
+}
+.progress-bar{
+  height: 20px;
+}
